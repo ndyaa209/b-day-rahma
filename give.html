@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>   /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+      background-size: 200% 200%;
+      animation: gradient-animation 6s infinite alternate;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    
+    .birthday-container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      animation: fade-in 2s ease-in-out;
+    }
+    
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animated-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      animation: text-pop 1.5s infinite alternate;
+    }
+    
+    @keyframes text-pop {
+      0% { transform: scale(1); color: #ffe0ac; }
+      100% { transform: scale(1.1); color: #ffd700; }
+    }
+    
+    .birthday-image {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    
+    button {
+      background: #ff6f61;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+    
+    button:hover {
+      background: #ff3d3d;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(255, 61, 61, 0.4);
+    }
+    </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="birthday-container">
+    <div class="content">
+      <h1 class="animated-text">🎉 Happy Birthday! 🎂</h1>
+      <img src="/pti 1/img rahma/WhatsApp Image 2024-11-24 at 22.54.36_6a968095.jpg" alt="Birthday Celebration" class="birthday-image">
+      <p>Dear <b>Rahma</b>,</p>
+      <button onclick="alert('🎁 Kejutan Spesial Untukmu!')">Klik untuk Kejutan 🎁</button>
+    </div>
+  </div>
+</body>
+</html>
